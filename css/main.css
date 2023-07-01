@@ -1,0 +1,14 @@
+.footer{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.footer-hours-information{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.footer-social__list{
+    list-style-type:none;
+    display:flex;
+}
