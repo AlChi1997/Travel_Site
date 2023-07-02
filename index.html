@@ -3,57 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header class="nav">
-        <h2 class="nav__title">Travel Site</h2>
+        <h2 class="nav__title">
+            <a class="nav__title-link" href="./index.html">Travel Site</a></h2>
         <li class="nav__list">
             <ul class="nav__list-1">
-                <a href="index.html" >Home</a>
+                <a class="nav__list-home" href="./index.html" >Home</a>
             </ul>
             <ul class="nav__list-2">
-                <a href="hawaii.html" >Hawaii</a>
+                <a class="nav__list-hawaii" href="./pages/hawaii.html" >Hawaii</a>
             </ul>
             <ul class="nav__list-3">
-                <a href="iceland.html" >Iceland</a>
+                <a class="nav__list-iceland" href="./pages/iceland.html" >Iceland</a>
             </ul>
             <ul class="nav__list-4">
-                <a href="greece.html" >Greece</a>
+                <a class="nav__list-greece" href="./pages/greece.html" >Greece</a>
             </ul>
         </li>
     </header>
     <section class="hero">
-        <h1 class="hero__title">Travelling Comes With Endless Discoveries</h1>
-        <p class="hero__description">Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
-        <button class="hero__button">Get Started</button>
+        <div class="hero-text">
+            <h1 class="hero__title">Travelling Comes With Endless Discoveries</h1>
+            <p class="hero__description">Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
+            <button type="hero__button">Get Started</button>
+        </div>
         <img class="hero__img" src="./assets/images/hero.png">
     </section>
     <section class="destinations">
         <h3 class="destinations__title">Recommendations</h3>
-        <article class="destinations__card">
-            <h4 class="destinations__card-name">Hawaii</h4>
-            <img class="destinations__card-img" src="./assets/images/hawaii.jpg">
-        </article>
-        <article class="destinations__card">
-            <h4 class="destinations__card-name">Iceland</h4>
-            <img class="destinations__card-img" src="./assets/images/iceland.jpg">
-        </article>
-        <article class="destinations__card">
-            <h4 class="destinations__card-name">Greece</h4>
-            <img class="destinations__card-img" src="./assets/images/greece.jpg">
-        </article>
+        <div class="destinations-group">
+            <a href="./pages/hawaii.html">
+                <article class="destinations__card">
+                    <img class="destinations__card-img" src="./assets/images/hawaii.jpg">
+                    <h4 class="destinations__card-name">Hawaii</h4>
+                </article>
+            </a>
+            <a href="./pages/iceland.html">
+                <article class="destinations__card">
+                    <img class="destinations__card-img" src="./assets/images/iceland.jpg">
+                    <h4 class="destinations__card-name">Iceland</h4>
+                </article>
+            </a>
+            <a href="./pages/greece.html">
+                <article class="destinations__card">
+                    <img class="destinations__card-img" src="./assets/images/greece.jpg">
+                    <h4 class="destinations__card-name">Greece</h4>
+                </article>
+            </a>
+        </div>
     </article>
+    </section>
     <footer class="footer">
         <div class="footer-contact">
-            <h2 class="footer-contact__header">Contact</h2>
+            <h5 class="footer-contact__header">Contact</h5>
             <p class="footer-contact__title">EMAIL</p>
             <p class="footer-contact__email">info@travelsite.com</p>
         </div>
         <div class="footer-hours">
-            <h2 class="footer-hours__header">Hours</h2>
+            <h5 class="footer-hours__header">Hours</h5>
             <section class="footer-hours-information">
                 <div class="footer-hours__weekday">
                     <p class="footer-hours__weekday-title">MONDAY - FRIDAY</p>
@@ -61,7 +74,7 @@
                 </div>
                 <div class="footer-hours__saturday">
                     <p class="footer-hours__saturday-title">SATURDAY</p>
-                    <p class="footer-hours__sautrday-times">10:00 AM - 4:00 PM</p>
+                    <p class="footer-hours__saturday-times">10:00 AM - 4:00 PM</p>
                 </div>
                 <div class="footer-hours__sunday">
                     <p class="footer-hours__sunday-title">SUNDAY</p>
@@ -70,16 +83,16 @@
             </section>
         </div>
         <div class="footer-social">
-            <h2 class="footer-social__header">Social</h2>
+            <h5 class="footer-social__header">Social</h5>
             <ul class="footer-social__list">
-                <li class="footer-social__list-img">
-                    <img src="./assets/images/icon-instagram.png">
+                <li>
+                    <img class="footer-social__list-img" src="./assets/images/icon-instagram.png">
                 </li>
                 <li class="footer-social__list-img">
-                    <img src="./assets/images/icon-facebook.png"
+                    <img class="footer-social__list-img" src="./assets/images/icon-facebook.png"
                 </li>
                 <li>
-                    <img src="./assets/images/icon-twitter.png">
+                    <img class="footer-social__list-img" src="./assets/images/icon-twitter.png">
                 </li>
             </ul>
         </div>

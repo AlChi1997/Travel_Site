@@ -1,14 +1,83 @@
-.footer{
-    display:flex;
-    justify-content:space-evenly;
+.nav{
+    position:fixed;
 }
 
-.footer-hours-information{
-    display:flex;
-    justify-content:space-evenly;
+.nav__list-1{
+    border-bottom: #DB7A4E solid 3px;
+    padding-bottom:0.2em;
 }
 
-.footer-social__list{
-    list-style-type:none;
+.hero{
     display:flex;
+    justify-content:space-evenly;
+    background-color:#FEFAF5;
+    align-items:center;
+    padding:3em 5em;
+    gap:10em;
+}
+
+.hero__title{
+    font-size:2.5em;
+    font-weight:bold;
+    color:#335576;
+    
+}
+
+.hero__description{
+    padding: 2em 0em;
+    width:35em;
+}
+
+button{
+    background-color:#DB7A4E;
+    color:#FFFFFF;
+    border:none;
+    padding:0.5em 2em;
+    border-radius:15px;
+}
+
+.hero__img{
+    height:25em;
+    padding:2em 0;
+}
+
+.destinations{
+    padding:2em 0 4em;
+    position:relative;
+}
+
+.destinations__title{
+    font-size:1.5em;
+    color:#335576;
+    position:absolute;
+    top:1em;
+    left:5.5em;
+}
+
+.destinations-group{
+    display:flex;
+    gap:3.5em;
+    justify-content:center;
+    padding-top:3em;
+}
+
+.destinations__card-name{
+    text-align:end;
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0em 1em 1em 0em;
+    font-size:1.5em;
+    color:#FFFFFF;
+}
+
+.destinations__card{
+    position:relative;
+}
+
+.destinations__card-img{
+    border-radius:5px;
+    border:rgba(0,0,0,0.2) solid 1px;
+    height:25em;
+    box-shadow:0px 4px 4px rgba(0,0,0,0.2);
 }

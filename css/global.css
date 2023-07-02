@@ -6,4 +6,108 @@
 body {
     font-family: 'Open Sans';
     font-weight: 400;
+    position:relative;
+    height:100%
+}
+
+h5{
+    color:#335576;
+    font-size:1.9em;
+}
+
+.nav{
+    position:fixed relative;
+    top:0;
+    width:100%;
+    display:flex;
+    background-color:#FFFFFF;
+    z-index:2;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:2em 0;
+}
+
+.nav__list-1:hover, 
+.nav__list-2:hover, 
+.nav__list-3:hover, 
+.nav__list-4:hover{
+    border-bottom: #DB7A4E solid 3px;
+}
+
+.nav__title{
+    color:#335576;
+    font-weight:700;
+    position:absolute;
+    left:4.5em;
+}
+
+.nav__title-link{
+    text-decoration-line:none;
+}
+
+.nav__list{
+    list-style-type:none;
+    display:flex;
+    gap:2em;
+    position:absolute;
+    right:4.5em;
+}
+
+.nav__list-hawaii, .nav__list-home, .nav__list-iceland, .nav__list-greece{
+    text-decoration-line:none;
+    font-weight:600;
+}
+
+.footer{
+    margin-top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    padding:2em 0;
+    background-color:#FEFAF5;
+}
+
+.footer-contact__title{
+    padding:2.5em 0 0.8em;
+    color:#DB7A4E;
+    font-size:0.9em;
+    font-weight:600;
+}
+
+.footer-contact__email{
+    color:#335576;
+    font-size:1em;
+    font-weight:600;
+}
+
+.footer-hours-information{
+    display:flex;
+    justify-content:space-evenly;
+    gap:2em;
+}
+
+.footer-hours__weekday, .footer-hours__saturday,.footer-hours__sunday{
+    padding:2.5em 0 1em;
+    color:#DB7A4E;
+    font-size:0.9em;
+    font-weight:600;
+}
+
+.footer-hours__weekday-times,.footer-hours__saturday-times,.footer-hours__sunday-times{
+    padding:1em 0 0;
+    color:#335576;
+    font-weight:600;
+    font-size:1em;
+}
+
+.footer-social__list{
+    list-style-type:none;
+    display:flex;
+    gap:3em;
+    padding:3em 0 0;
+}
+
+.footer-social__list-img{
+    max-height:36px;
+    max-width:auto;
 }
